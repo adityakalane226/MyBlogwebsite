@@ -1,0 +1,15 @@
+<%-include("partials/header.ejs") %>
+<div class="container-template">
+    <h1><%= blog.title %></h1>
+    <hr>
+    <p><%= blog.text %></p>
+
+    <button type="submit" class="btn btn-warning"><a href="/blogs/<%= blogId %>/edit">Edit</a></button>
+    <form action="/blogs/<%= blogId %>/delete?_method=DELETE" method="POST" style="display:inline;">
+        <button type="submit" onclick="return confirm('Delete this blog?')">Delete</button>
+      </form>
+      
+    
+</div>
+
+<%-include("partials/footer.ejs") %>

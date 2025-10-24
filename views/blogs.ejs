@@ -1,0 +1,14 @@
+<%-include("partials/header.ejs") %>
+<div class="container-blogs content-wrapper">
+    <% if(blogs.length===0){ %>
+        <p>No blogs right now</p>
+    <%}else{%>
+        <%blogs.forEach((post,index) => {%>
+            <ul>
+                <li><a href="/blogs/<%= index %>"><%= post.title %></a></li>
+
+            </ul>
+        <%  }); %>
+<% } %>
+</div>
+<%-include("partials/footer.ejs") %>
