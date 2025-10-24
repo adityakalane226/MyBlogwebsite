@@ -1,8 +1,5 @@
 {
-  "scripts": {
-  "start": "node app.js"
-},
-
+  
   "type": "module",
   "dependencies": {
     "body-parser": "^2.2.0",
@@ -15,6 +12,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
